@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96110D"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+            android:text="@string/save_gate" />
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TableLayout
+            android:id="@+id/gate_code_table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#96110D"
+            android:gravity="center" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#7F2108"
+                    android:gravity="center_horizontal"
+                    android:text="@string/codes_gate"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:typeface="serif" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:text=""
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:text=""
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:selectAllOnFocus="true"
+                    android:imeOptions="actionDone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:selectAllOnFocus="true"
+                    android:imeOptions="actionDone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow17"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:selectAllOnFocus="true"
+                    android:imeOptions="actionDone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:selectAllOnFocus="true"
+                    android:imeOptions="actionDone"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow25"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow26"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode27"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow28"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow29"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <EditText
+                    android:id="@+id/subName30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+
+                <EditText
+                    android:id="@+id/subCode30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dip"
+                    android:layout_weight="0.3"
+                    android:background="#E09B31"
+                    android:imeOptions="actionDone"
+                    android:selectAllOnFocus="true"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#344519" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

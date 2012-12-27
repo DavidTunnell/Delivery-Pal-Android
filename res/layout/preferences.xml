@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F2108" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="Welcome to Delivery Pal! Please input the following information:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/MainWage"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="79dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:imeOptions="actionDone"
+            android:selectAllOnFocus="true" />
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/MainWage"
+            android:layout_alignBottom="@+id/MainWage"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/MainWage"
+            android:text="Hourly Wage:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <CheckBox
+            android:id="@+id/wageCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="19dp"
+            android:text="Check if you get paid a different rate on the road" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_below="@+id/MainWage"
+            android:layout_marginTop="24dp"
+            android:text="Road Wage:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_below="@+id/TextView01"
+            android:layout_marginLeft="19dp"
+            android:text="(If Applicable)"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <EditText
+            android:id="@+id/RoadWage"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/TextView01"
+            android:layout_marginTop="-4dp"
+            android:layout_toRightOf="@+id/textView2"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView01"
+            android:layout_below="@+id/RoadWage"
+            android:layout_marginTop="28dp"
+            android:text="Delivery Fee:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/DeliveryFee"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView02"
+            android:layout_alignBottom="@+id/TextView02"
+            android:layout_toRightOf="@+id/textView2"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:imeOptions="actionDone" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/DeliveryFee"
+            android:layout_marginTop="22dp"
+            android:gravity="center"
+            android:text="You can change this information any time by selecting Menu > Preferences"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/ExitPref"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/TextView03"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="Save and Exit"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+</ScrollView>

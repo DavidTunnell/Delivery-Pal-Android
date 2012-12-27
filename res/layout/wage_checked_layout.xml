@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96110D"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/FinishBut"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="5dp"
+            android:text="Finish Week" />
+
+        <Button
+            android:id="@+id/SaveBut"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:text="Save" />
+    </RelativeLayout>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/main_bg" >
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/home_bar_light" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="Monday"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView03"
+            android:layout_below="@+id/ImageView03"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/tip_money_box" />
+
+        <EditText
+            android:id="@+id/TipBoxCheck1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="9dp"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:src="@drawable/tip_money_box" />
+
+        <EditText
+            android:id="@+id/InStore1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TipBoxCheck1"
+            android:layout_alignTop="@+id/ImageView01"
+            android:layout_centerInParent="false"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="9dp"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/TextView01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TipBoxCheck1"
+            android:layout_alignBottom="@+id/TipBoxCheck1"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_marginLeft="11dp"
+            android:text="Total Tips"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/TextView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/InStore1"
+            android:layout_alignBottom="@+id/InStore1"
+            android:layout_alignLeft="@+id/TextView01"
+            android:text="Hours in Store"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView01"
+            android:layout_below="@+id/ImageView01"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView02"
+            android:layout_alignTop="@+id/ImageView02"
+            android:layout_marginTop="18dp"
+            android:text="Hours on Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/OnRoad1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView04"
+            android:layout_alignBottom="@+id/TextView04"
+            android:layout_alignLeft="@+id/InStore1"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView04"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView02"
+            android:layout_below="@+id/ImageView02"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView04"
+            android:layout_alignTop="@+id/ImageView04"
+            android:layout_marginTop="18dp"
+            android:text="Gas Spent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/ImageView05"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView04"
+            android:src="@drawable/home_bar_light" />
+
+        <TextView
+            android:id="@+id/TextView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView05"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="Tuesday"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/GasSpent1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView05"
+            android:layout_alignBottom="@+id/TextView05"
+            android:layout_alignLeft="@+id/OnRoad1"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView06"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView04"
+            android:layout_below="@+id/ImageView05"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView05"
+            android:layout_alignTop="@+id/ImageView06"
+            android:layout_marginTop="18dp"
+            android:text="Total Tips"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/TipBoxCheck2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView07"
+            android:layout_alignBottom="@+id/TextView07"
+            android:layout_alignLeft="@+id/GasSpent1"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView06"
+            android:layout_below="@+id/ImageView06"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView07"
+            android:layout_alignTop="@+id/ImageView07"
+            android:layout_marginTop="18dp"
+            android:text="Hours in Store"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/InStore2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView08"
+            android:layout_alignBottom="@+id/TextView08"
+            android:layout_alignLeft="@+id/TipBoxCheck2"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView07"
+            android:layout_below="@+id/ImageView07"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView08"
+            android:layout_alignTop="@+id/ImageView08"
+            android:layout_marginTop="18dp"
+            android:text="Hours on Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/OnRoad2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView09"
+            android:layout_alignBottom="@+id/TextView09"
+            android:layout_alignLeft="@+id/InStore2"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView08"
+            android:layout_below="@+id/ImageView08"
+            android:src="@drawable/tip_money_box" />
+
+        <ImageView
+            android:id="@+id/ImageView10"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView09"
+            android:src="@drawable/home_bar_light" />
+
+        <TextView
+            android:id="@+id/TextView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView10"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="Wednesday"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/TextView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView09"
+            android:layout_alignTop="@+id/ImageView09"
+            android:layout_marginTop="18dp"
+            android:text="Gas Spent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/GasSpent2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView10"
+            android:layout_alignBottom="@+id/TextView10"
+            android:layout_alignLeft="@+id/OnRoad2"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/ImageView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView09"
+            android:layout_below="@+id/ImageView10"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView10"
+            android:layout_alignTop="@+id/ImageView11"
+            android:layout_marginTop="18dp"
+            android:text="Total Tips"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/TipBoxCheck3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView12"
+            android:layout_alignBottom="@+id/TextView12"
+            android:layout_alignLeft="@+id/GasSpent2"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView11"
+            android:layout_below="@+id/ImageView11"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView12"
+            android:layout_alignTop="@+id/ImageView12"
+            android:layout_marginTop="18dp"
+            android:text="Hours in Store"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/InStore3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView13"
+            android:layout_alignBottom="@+id/TextView13"
+            android:layout_alignLeft="@+id/TipBoxCheck3"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView12"
+            android:layout_below="@+id/ImageView12"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView13"
+            android:layout_alignTop="@+id/ImageView13"
+            android:layout_marginTop="18dp"
+            android:text="Hours on Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/OnRoad3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView14"
+            android:layout_alignBottom="@+id/TextView14"
+            android:layout_alignLeft="@+id/InStore3"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView13"
+            android:layout_below="@+id/ImageView13"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView14"
+            android:layout_alignTop="@+id/ImageView14"
+            android:layout_marginTop="18dp"
+            android:text="Gas Spent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/GasSpent3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView15"
+            android:layout_alignBottom="@+id/TextView15"
+            android:layout_alignLeft="@+id/OnRoad3"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView15"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView14"
+            android:src="@drawable/home_bar_light" />
+
+        <TextView
+            android:id="@+id/TextView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView15"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="9dp"
+            android:text="Thursday"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/ImageView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView14"
+            android:layout_below="@+id/ImageView15"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView15"
+            android:layout_alignTop="@+id/ImageView16"
+            android:layout_marginTop="18dp"
+            android:text="Total Tips"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/TipBoxCheck4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView17"
+            android:layout_alignBottom="@+id/TextView17"
+            android:layout_alignLeft="@+id/GasSpent3"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView16"
+            android:layout_below="@+id/ImageView16"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView17"
+            android:layout_alignTop="@+id/ImageView17"
+            android:layout_marginTop="18dp"
+            android:text="Hours in Store"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/InStore4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView18"
+            android:layout_alignBottom="@+id/TextView18"
+            android:layout_alignLeft="@+id/TipBoxCheck4"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView17"
+            android:layout_below="@+id/ImageView17"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView18"
+            android:layout_alignTop="@+id/ImageView18"
+            android:layout_marginTop="18dp"
+            android:text="Hours on Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/OnRoad4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView19"
+            android:layout_alignBottom="@+id/TextView19"
+            android:layout_alignLeft="@+id/InStore4"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView18"
+            android:layout_below="@+id/ImageView18"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView17"
+            android:layout_alignTop="@+id/ImageView19"
+            android:layout_marginTop="18dp"
+            android:text="Gas Spent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/GasSpent4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView20"
+            android:layout_alignBottom="@+id/TextView20"
+            android:layout_alignLeft="@+id/OnRoad4"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView20"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView19"
+            android:src="@drawable/home_bar_light" />
+
+        <TextView
+            android:id="@+id/TextView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView20"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="9dp"
+            android:text="Friday"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/ImageView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView19"
+            android:layout_below="@+id/ImageView20"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView20"
+            android:layout_alignTop="@+id/ImageView21"
+            android:layout_marginTop="18dp"
+            android:text="Total Tips"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/TipBoxCheck5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView22"
+            android:layout_alignBottom="@+id/TextView22"
+            android:layout_toRightOf="@+id/TextView21"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView21"
+            android:layout_below="@+id/ImageView21"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView19"
+            android:layout_alignTop="@+id/ImageView22"
+            android:layout_marginTop="18dp"
+            android:text="Hours in Store"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/InStore5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView23"
+            android:layout_alignBottom="@+id/TextView23"
+            android:layout_alignLeft="@+id/TipBoxCheck5"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView22"
+            android:layout_below="@+id/ImageView22"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView23"
+            android:layout_alignTop="@+id/ImageView23"
+            android:layout_marginTop="18dp"
+            android:text="Hours on Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/OnRoad5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView24"
+            android:layout_alignBottom="@+id/TextView24"
+            android:layout_toRightOf="@+id/TextView21"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView23"
+            android:layout_below="@+id/ImageView23"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView24"
+            android:layout_marginTop="18dp"
+            android:layout_toLeftOf="@+id/TextView21"
+            android:text="Gas Spent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/GasSpent5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView25"
+            android:layout_alignBottom="@+id/TextView25"
+            android:layout_alignLeft="@+id/OnRoad5"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView25"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView24"
+            android:src="@drawable/home_bar_light" />
+
+        <TextView
+            android:id="@+id/TextView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView25"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="9dp"
+            android:text="Saturday"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/ImageView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView24"
+            android:layout_below="@+id/ImageView25"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView25"
+            android:layout_alignTop="@+id/ImageView26"
+            android:layout_marginTop="18dp"
+            android:text="Total Tips"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/TipBoxCheck6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView27"
+            android:layout_alignBottom="@+id/TextView27"
+            android:layout_alignLeft="@+id/GasSpent4"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView26"
+            android:layout_below="@+id/ImageView26"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView24"
+            android:layout_alignTop="@+id/ImageView27"
+            android:layout_marginTop="18dp"
+            android:text="Hours in Store"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/InStore6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView28"
+            android:layout_alignBottom="@+id/TextView28"
+            android:layout_alignLeft="@+id/TipBoxCheck6"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView27"
+            android:layout_below="@+id/ImageView27"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView28"
+            android:layout_alignTop="@+id/ImageView28"
+            android:layout_marginTop="18dp"
+            android:text="Hours on Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/OnRoad6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView29"
+            android:layout_alignBottom="@+id/TextView29"
+            android:layout_alignLeft="@+id/InStore6"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView28"
+            android:layout_below="@+id/ImageView28"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView22"
+            android:layout_alignTop="@+id/ImageView29"
+            android:layout_marginTop="18dp"
+            android:text="Gas Spent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/GasSpent6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView30"
+            android:layout_alignBottom="@+id/TextView30"
+            android:layout_alignLeft="@+id/OnRoad6"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView30"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView29"
+            android:src="@drawable/home_bar_light" />
+
+        <TextView
+            android:id="@+id/TextView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView30"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="9dp"
+            android:text="Sunday"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <ImageView
+            android:id="@+id/ImageView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView29"
+            android:layout_below="@+id/ImageView30"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView30"
+            android:layout_alignTop="@+id/ImageView31"
+            android:layout_marginTop="18dp"
+            android:text="Total Tips"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/TipBoxCheck7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView32"
+            android:layout_alignBottom="@+id/TextView32"
+            android:layout_alignLeft="@+id/GasSpent6"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView31"
+            android:layout_below="@+id/ImageView31"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView32"
+            android:layout_alignTop="@+id/ImageView32"
+            android:layout_marginTop="18dp"
+            android:text="Hours in Store"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/InStore7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView33"
+            android:layout_alignBottom="@+id/TextView33"
+            android:layout_alignLeft="@+id/TipBoxCheck7"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView32"
+            android:layout_below="@+id/ImageView32"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/TextView33"
+            android:layout_alignTop="@+id/ImageView33"
+            android:layout_marginTop="18dp"
+            android:text="Hours on Road"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/OnRoad7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView34"
+            android:layout_alignBottom="@+id/TextView34"
+            android:layout_alignLeft="@+id/InStore7"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+
+        <ImageView
+            android:id="@+id/ImageView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/ImageView33"
+            android:layout_below="@+id/ImageView33"
+            android:src="@drawable/tip_money_box" />
+
+        <TextView
+            android:id="@+id/TextView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView27"
+            android:layout_alignTop="@+id/ImageView34"
+            android:layout_marginTop="18dp"
+            android:text="Gas Spent"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:typeface="serif" />
+
+        <EditText
+            android:id="@+id/GasSpent7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView35"
+            android:layout_alignBottom="@+id/TextView35"
+            android:layout_alignLeft="@+id/OnRoad7"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:selectAllOnFocus="true"
+            android:text="0" />
+    </RelativeLayout>
+
+</ScrollView></LinearLayout>

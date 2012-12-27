@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.davidtunnell.deliverypal"
+    android:versionCode="4"
+    android:versionName="1.03" >
+
+    <uses-sdk
+        android:minSdkVersion="4"
+        android:targetSdkVersion="10" />
+
+<compatible-screens>
+    <screen android:screenSize="small" android:screenDensity="ldpi" />
+    <screen android:screenSize="small" android:screenDensity="mdpi" />
+    <screen android:screenSize="small" android:screenDensity="hdpi" />
+    <screen android:screenSize="small" android:screenDensity="xhdpi" />
+
+    <screen android:screenSize="normal" android:screenDensity="ldpi" />
+    <screen android:screenSize="normal" android:screenDensity="mdpi" />
+    <screen android:screenSize="normal" android:screenDensity="hdpi" />
+    <screen android:screenSize="normal" android:screenDensity="xhdpi"/>
+
+</compatible-screens>
+
+    <application
+        android:icon="@drawable/icon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.davidtunnell.deliverypal.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.davidtunnell.deliverypal.TabLayoutActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.davidtunnell.deliverypal.MAINTABS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.davidtunnell.deliverypal.HomeActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.davidtunnell.deliverypal.HOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.davidtunnell.deliverypal.About"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.davidtunnell.deliverypal.ABOUT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.davidtunnell.deliverypal.Tutorial"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.davidtunnell.deliverypal.TUTORIAL" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.davidtunnell.deliverypal.Preferences"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.davidtunnell.deliverypal.PREFERENCES" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.davidtunnell.deliverypal.HistoryActivity"
+            android:exported="false"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="com.davidtunnell.deliverypal.HISTORY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.davidtunnell.deliverypal.WageActivity" />
+        <activity android:name="com.davidtunnell.deliverypal.WageCheckedActivity" />
+        <activity android:name="com.davidtunnell.deliverypal.MapsActivity" />
+        <activity android:name="com.davidtunnell.deliverypal.GateActivity" />
+        <activity android:name="com.davidtunnell.deliverypal.TipsActivity" />
+    </application>
+
+</manifest>

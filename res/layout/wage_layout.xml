@@ -1,0 +1,861 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#96110D"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100" >
+
+        <Button
+            android:id="@+id/FinishBut"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="5dp"
+            android:text="Finish Week" />
+
+        <Button
+            android:id="@+id/SaveBut"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="10dp"
+            android:text="Save" />
+    </RelativeLayout>
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_bg" >
+
+            <ImageView
+                android:id="@+id/ImageView03"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/home_bar_light" />
+
+            <TextView
+                android:id="@+id/TextView03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="Monday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/TextView03"
+                android:layout_below="@+id/ImageView03"
+                android:layout_marginRight="26dp"
+                android:src="@drawable/tip_money_box" />
+
+            <EditText
+                android:id="@+id/tipBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/imageView1"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="9dp"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" >
+            </EditText>
+
+            <ImageView
+                android:id="@+id/ImageView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_below="@+id/imageView1"
+                android:src="@drawable/tip_money_box" />
+
+            <EditText
+                android:id="@+id/hoursBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/tipBox1"
+                android:layout_alignTop="@+id/ImageView01"
+                android:layout_centerInParent="false"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="9dp"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/TextView01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tipBox1"
+                android:layout_alignBottom="@+id/tipBox1"
+                android:layout_alignLeft="@+id/imageView1"
+                android:layout_marginLeft="20dp"
+                android:text="Total Tips"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <TextView
+                android:id="@+id/TextView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/hoursBox1"
+                android:layout_alignBottom="@+id/hoursBox1"
+                android:layout_alignRight="@+id/TextView01"
+                android:layout_marginRight="18dp"
+                android:text="Hours"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/ImageView02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView01"
+                android:layout_below="@+id/ImageView01"
+                android:src="@drawable/tip_money_box" />
+
+            <EditText
+                android:id="@+id/gasBox1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/hoursBox1"
+                android:layout_alignTop="@+id/ImageView02"
+                android:layout_marginRight="22dp"
+                android:layout_marginTop="9dp"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/TextView04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/gasBox1"
+                android:layout_alignBottom="@+id/gasBox1"
+                android:layout_alignLeft="@+id/TextView01"
+                android:text="Gas Spent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/ImageView04"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ImageView02"
+                android:src="@drawable/home_bar_light" />
+
+            <TextView
+                android:id="@+id/TextView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImageView04"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="Tuesday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/ImageView05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView02"
+                android:layout_below="@+id/ImageView04"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView04"
+                android:layout_alignTop="@+id/ImageView05"
+                android:layout_marginTop="14dp"
+                android:text="Total Tips"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/tipBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView06"
+                android:layout_alignBottom="@+id/TextView06"
+                android:layout_alignLeft="@+id/gasBox1"
+                android:layout_marginBottom="7dp"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView06"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView05"
+                android:layout_below="@+id/ImageView05"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView02"
+                android:layout_alignTop="@+id/ImageView06"
+                android:layout_marginTop="14dp"
+                android:text="Hours"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/hoursBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView07"
+                android:layout_alignBottom="@+id/TextView07"
+                android:layout_alignLeft="@+id/tipBox2"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView07"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView06"
+                android:layout_below="@+id/ImageView06"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView08"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView06"
+                android:layout_alignTop="@+id/ImageView07"
+                android:layout_marginTop="14dp"
+                android:text="Gas Spent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/gasBox2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView08"
+                android:layout_alignBottom="@+id/TextView08"
+                android:layout_alignLeft="@+id/hoursBox2"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView08"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ImageView07"
+                android:src="@drawable/home_bar_light" />
+
+            <TextView
+                android:id="@+id/TextView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImageView08"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="Wednesday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/ImageView09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView07"
+                android:layout_below="@+id/ImageView08"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView09"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView08"
+                android:layout_alignTop="@+id/ImageView09"
+                android:layout_marginTop="14dp"
+                android:text="Total Tips"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/tipBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView09"
+                android:layout_alignBottom="@+id/TextView09"
+                android:layout_alignLeft="@+id/gasBox2"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView09"
+                android:layout_below="@+id/ImageView09"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView07"
+                android:layout_alignTop="@+id/ImageView10"
+                android:layout_marginTop="14dp"
+                android:text="Hours"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/hoursBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView11"
+                android:layout_alignBottom="@+id/TextView11"
+                android:layout_alignLeft="@+id/tipBox3"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView10"
+                android:layout_below="@+id/ImageView10"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView09"
+                android:layout_alignTop="@+id/ImageView11"
+                android:layout_marginTop="14dp"
+                android:text="Gas Spent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/gasBox3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView12"
+                android:layout_alignBottom="@+id/TextView12"
+                android:layout_alignLeft="@+id/hoursBox3"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView12"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ImageView11"
+                android:src="@drawable/home_bar_light" />
+
+            <TextView
+                android:id="@+id/TextView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImageView12"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="Thursday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/ImageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView11"
+                android:layout_below="@+id/ImageView12"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView12"
+                android:layout_alignTop="@+id/ImageView13"
+                android:layout_marginTop="14dp"
+                android:text="Total Tips"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/tipBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView14"
+                android:layout_alignBottom="@+id/TextView14"
+                android:layout_alignLeft="@+id/gasBox3"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView13"
+                android:layout_below="@+id/ImageView13"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView11"
+                android:layout_alignTop="@+id/ImageView14"
+                android:layout_marginTop="14dp"
+                android:text="Hours"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/hoursBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView15"
+                android:layout_alignBottom="@+id/TextView15"
+                android:layout_alignLeft="@+id/tipBox4"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView14"
+                android:layout_below="@+id/ImageView14"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView14"
+                android:layout_alignTop="@+id/ImageView15"
+                android:layout_marginTop="14dp"
+                android:text="Gas Spent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/gasBox4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView16"
+                android:layout_alignBottom="@+id/TextView16"
+                android:layout_alignLeft="@+id/hoursBox4"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView16"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ImageView15"
+                android:src="@drawable/home_bar_light" />
+
+            <TextView
+                android:id="@+id/TextView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImageView16"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="Friday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/ImageView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView15"
+                android:layout_below="@+id/ImageView16"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView16"
+                android:layout_alignTop="@+id/ImageView17"
+                android:layout_marginTop="14dp"
+                android:text="Total Tips"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/tipBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView18"
+                android:layout_alignBottom="@+id/TextView18"
+                android:layout_alignLeft="@+id/gasBox4"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView17"
+                android:layout_below="@+id/ImageView17"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView15"
+                android:layout_alignTop="@+id/ImageView18"
+                android:layout_marginTop="14dp"
+                android:text="Hours"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/hoursBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView19"
+                android:layout_alignBottom="@+id/TextView19"
+                android:layout_alignLeft="@+id/tipBox5"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView18"
+                android:layout_below="@+id/ImageView18"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView18"
+                android:layout_alignTop="@+id/ImageView19"
+                android:layout_marginTop="14dp"
+                android:text="Gas Spent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/gasBox5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView20"
+                android:layout_alignBottom="@+id/TextView20"
+                android:layout_alignLeft="@+id/hoursBox5"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <ImageView
+                android:id="@+id/ImageView20"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ImageView19"
+                android:src="@drawable/home_bar_light" />
+
+            <TextView
+                android:id="@+id/TextView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImageView20"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="Saturday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/ImageView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView19"
+                android:layout_below="@+id/ImageView20"
+                android:src="@drawable/tip_money_box" />
+
+            <ImageView
+                android:id="@+id/ImageView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView21"
+                android:layout_below="@+id/ImageView21"
+                android:src="@drawable/tip_money_box" />
+
+            <ImageView
+                android:id="@+id/ImageView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView22"
+                android:layout_below="@+id/ImageView22"
+                android:src="@drawable/tip_money_box" />
+
+            <ImageView
+                android:id="@+id/ImageView24"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/ImageView23"
+                android:src="@drawable/home_bar_light" />
+
+            <ImageView
+                android:id="@+id/ImageView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView23"
+                android:layout_below="@+id/ImageView24"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ImageView24"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="9dp"
+                android:text="Sunday"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <ImageView
+                android:id="@+id/ImageView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView25"
+                android:layout_below="@+id/ImageView25"
+                android:src="@drawable/tip_money_box" />
+
+            <ImageView
+                android:id="@+id/ImageView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/ImageView26"
+                android:layout_below="@+id/ImageView26"
+                android:src="@drawable/tip_money_box" />
+
+            <TextView
+                android:id="@+id/TextView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView20"
+                android:layout_alignTop="@+id/ImageView21"
+                android:layout_marginTop="14dp"
+                android:text="Total Tips"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/tipBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView22"
+                android:layout_alignBottom="@+id/TextView22"
+                android:layout_alignLeft="@+id/gasBox5"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/TextView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView19"
+                android:layout_alignTop="@+id/ImageView22"
+                android:layout_marginTop="14dp"
+                android:text="Hours"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/hoursBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView23"
+                android:layout_alignBottom="@+id/TextView23"
+                android:layout_alignLeft="@+id/tipBox6"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/TextView24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView22"
+                android:layout_alignTop="@+id/ImageView23"
+                android:layout_marginTop="14dp"
+                android:text="Gas Spent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/gasBox6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView24"
+                android:layout_alignBottom="@+id/TextView24"
+                android:layout_alignLeft="@+id/hoursBox6"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/TextView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView24"
+                android:layout_alignTop="@+id/ImageView25"
+                android:layout_marginTop="14dp"
+                android:text="Total Tips"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/tipBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView25"
+                android:layout_alignBottom="@+id/TextView25"
+                android:layout_alignLeft="@+id/gasBox6"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/TextView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView23"
+                android:layout_alignTop="@+id/ImageView26"
+                android:layout_marginTop="14dp"
+                android:text="Hours"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/hoursBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView27"
+                android:layout_alignBottom="@+id/TextView27"
+                android:layout_alignLeft="@+id/tipBox7"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+
+            <TextView
+                android:id="@+id/TextView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/TextView25"
+                android:layout_alignTop="@+id/ImageView27"
+                android:layout_marginTop="14dp"
+                android:text="Gas Spent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/gasBox7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/TextView28"
+                android:layout_alignBottom="@+id/TextView28"
+                android:layout_alignLeft="@+id/hoursBox7"
+                android:ems="5"
+                android:gravity="center"
+                android:inputType="numberDecimal"
+                android:selectAllOnFocus="true"
+                android:text="0" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

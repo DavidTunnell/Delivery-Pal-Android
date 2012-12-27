@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7F2108" >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/home_bar_light" />
+
+        <ImageView
+            android:id="@+id/ImageView03"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageView1"
+            android:src="@drawable/home_bar2" />
+
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView03"
+            android:src="@drawable/home_bar2" />
+
+        <ImageView
+            android:id="@+id/ImageView04"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView02"
+            android:src="@drawable/home_bar2" />
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView04"
+            android:src="@drawable/home_bar2" />
+
+        <ImageView
+            android:id="@+id/ImageView05"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/ImageView01"
+            android:src="@drawable/home_bar2" />
+
+        <TextView
+            android:id="@+id/WeeklySummary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="9dp"
+            android:text="Weekly Summary"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView03"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:text="Hourly Wage:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView02"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:text="Hourly After Gas:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/TextView03"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView04"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:text="Total Tips:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/TextView05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ImageView01"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="9dp"
+            android:text="Total Hours:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Home1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginLeft="-20dp"
+            android:layout_toRightOf="@+id/WeeklySummary"
+            android:text="0.00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Home2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView3"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_alignLeft="@+id/Home1"
+            android:text="0.00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Home3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView03"
+            android:layout_alignBottom="@+id/TextView03"
+            android:layout_alignLeft="@+id/Home2"
+            android:text="0.00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Home4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/TextView05"
+            android:layout_alignBottom="@+id/TextView05"
+            android:layout_alignLeft="@+id/Home3"
+            android:text="0.00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <Button
+            android:id="@+id/HistoryButton"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
+            android:layout_below="@+id/TextView07"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="25dp"
+            android:text="History"
+            android:textSize="10dp" />
+
+        <Button
+            android:id="@+id/CalcButton"
+            android:layout_width="100dp"
+            android:layout_height="34dp"
+            android:layout_alignBaseline="@+id/HistoryButton"
+            android:layout_alignBottom="@+id/HistoryButton"
+            android:layout_toRightOf="@+id/HistoryButton"
+                        android:layout_marginLeft="65dp"
+            android:text="Calculator"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/TextView07"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/TextView05"
+            android:layout_alignTop="@+id/ImageView05"
+            android:text="Total Income:"
+                        android:layout_marginTop="9dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/Home5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/HistoryButton"
+            android:layout_alignLeft="@+id/Home4"
+            android:text="0.00"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:typeface="serif" />
+
+    </RelativeLayout>
+
+</ScrollView>
